@@ -18,13 +18,13 @@ struct ContentView: View {
                 .frame(width: 300, height: 300)
                 .shadow(color: Color.black.opacity(0.2), radius: 10, x: 10, y: 10) // bottom right shadow
                 .shadow(color: Color.white.opacity(0.7), radius: 10, x: -5, y: -5)
-                    // top left shadow
+            // top left shadow
         }
         .edgesIgnoringSafeArea(.all)
-    .overlay(Text("Special card by Tommy")
-    .font(.system(size: 25))
-    .fontWeight(.bold)
-    .foregroundColor(.black)
+        .overlay(Text("Special card by Tommy")
+        .font(.system(size: 25))
+        .fontWeight(.bold)
+        .foregroundColor(.black)
         )
     }
 }
@@ -38,5 +38,6 @@ extension Color {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+        // .previewDevice(PreviewDevice(rawValue: "iPhone Xs"))
     }
 }
